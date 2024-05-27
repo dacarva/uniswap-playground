@@ -18,7 +18,7 @@ export interface BaseConfig {
 export const CurrentConfig: BaseConfig = {
 	rpc: {
 		local: "http://localhost:8545",
-		mainnet: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+		mainnet: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.NEXT_PUBLIC_ALCHEMY_API_KEY}`,
 	},
 	tokens: {
 		in: COPM_TOKEN,

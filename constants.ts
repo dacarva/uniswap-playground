@@ -50,7 +50,7 @@ const COPM_STAGING_TOKEN = new Token(
 let USDC_TOKEN = USDC_STAGING_TOKEN;
 let COPM_TOKEN = COPM_STAGING_TOKEN;
 
-if (process.env.NODE_ENV === "production") {
+if (process.env.NEXT_PUBLIC_ENVIRONMENT === "production") {
     USDC_TOKEN = USDC_PRODUCTION_TOKEN;
     COPM_TOKEN = COPM_PRODUCTION_TOKEN;
 }
